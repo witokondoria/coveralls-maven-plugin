@@ -31,6 +31,7 @@ import org.eluder.coveralls.maven.plugin.domain.Source;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import org.apache.maven.plugin.logging.SystemStreamLog;
 
 public class MultiSourceLoader implements SourceLoader {
     
@@ -49,6 +50,8 @@ public class MultiSourceLoader implements SourceLoader {
                 return source;
             }
         }
-        throw new IOException("No source found for " + sourceFile);
+        SystemStreamLog log = new SystemStreamLog();
+
+        log.error ("No source found for " + sourceFile);
     }
 }
