@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.3.0 (upcoming)
+
+* Avoid throwing IllegalArgumentException on coverage over source limits
+
 ## 4.2.0
 
 - #95, #96: Improved error message for misbehaving Coveralls API

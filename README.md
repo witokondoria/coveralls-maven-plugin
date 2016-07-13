@@ -1,10 +1,6 @@
 coveralls-maven-plugin
 ======================
 
-[![Build Status](http://img.shields.io/travis/trautonen/coveralls-maven-plugin/master.svg?style=flat-square)](https://travis-ci.org/trautonen/coveralls-maven-plugin)
-[![Coverage Status](http://img.shields.io/coveralls/trautonen/coveralls-maven-plugin/master.svg?style=flat-square)](https://coveralls.io/r/trautonen/coveralls-maven-plugin?branch=master)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.eluder.coveralls/coveralls-maven-plugin/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/org.eluder.coveralls/coveralls-maven-plugin/)
-
 Maven plugin for submitting Java code coverage reports to [Coveralls](https://coveralls.io/) web
 service.
 
@@ -36,9 +32,9 @@ Set up the Coveralls maven plugin in the build section of the project pom.xml:
 
 ```xml
 <plugin>
-    <groupId>org.eluder.coveralls</groupId>
+    <groupId>com.stratio.coveralls</groupId>
     <artifactId>coveralls-maven-plugin</artifactId>
-    <version>4.2.0</version>
+    <version>4.3.0-SNAPSHOT</version>
     <configuration>
         <repoToken>yourcoverallsprojectrepositorytoken</repoToken>
     </configuration>
